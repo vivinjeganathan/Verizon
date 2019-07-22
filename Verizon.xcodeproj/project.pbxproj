@@ -13,6 +13,15 @@
 		F2D7825122DAAA6A00318351 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D7825022DAAA6A00318351 /* Assets.xcassets */; };
 		F2D7825422DAAA6A00318351 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2D7825222DAAA6A00318351 /* LaunchScreen.storyboard */; };
 		F2D7825F22DAAA6A00318351 /* VerizonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D7825E22DAAA6A00318351 /* VerizonTests.swift */; };
+		F2D7826B22DAAAFE00318351 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D7826A22DAAAFE00318351 /* HomeViewModel.swift */; };
+		F2D7826D22DAAB0A00318351 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D7826C22DAAB0A00318351 /* HomeModel.swift */; };
+		F2D7827022DAAB4500318351 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D7826F22DAAB4500318351 /* HomeTableViewCell.swift */; };
+		F2D7827222DAAB6F00318351 /* HomeCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D7827122DAAB6F00318351 /* HomeCellViewModel.swift */; };
+		F2D7827522DAABEA00318351 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D7827422DAABEA00318351 /* NetworkHelper.swift */; };
+		F2D7827A22DAC98400318351 /* VerizonPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D7827922DAC98400318351 /* VerizonPlayerViewController.swift */; };
+		F2D7827E22DAC9C800318351 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D7827D22DAC9C800318351 /* HomeViewModelTests.swift */; };
+		F2D7828122DAC9E800318351 /* HomeCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D7828022DAC9E800318351 /* HomeCellViewModelTests.swift */; };
+		F2D7828422DB935700318351 /* LoadingTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D7828322DB935700318351 /* LoadingTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +45,15 @@
 		F2D7825A22DAAA6A00318351 /* VerizonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VerizonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2D7825E22DAAA6A00318351 /* VerizonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerizonTests.swift; sourceTree = "<group>"; };
 		F2D7826022DAAA6A00318351 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2D7826A22DAAAFE00318351 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		F2D7826C22DAAB0A00318351 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		F2D7826F22DAAB4500318351 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		F2D7827122DAAB6F00318351 /* HomeCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellViewModel.swift; sourceTree = "<group>"; };
+		F2D7827422DAABEA00318351 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		F2D7827922DAC98400318351 /* VerizonPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerizonPlayerViewController.swift; sourceTree = "<group>"; };
+		F2D7827D22DAC9C800318351 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		F2D7828022DAC9E800318351 /* HomeCellViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellViewModelTests.swift; sourceTree = "<group>"; };
+		F2D7828322DB935700318351 /* LoadingTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +96,9 @@
 			isa = PBXGroup;
 			children = (
 				F2D7824922DAAA6A00318351 /* AppDelegate.swift */,
-				F2D7824B22DAAA6A00318351 /* ViewController.swift */,
-				F2D7824D22DAAA6A00318351 /* Main.storyboard */,
-				F2D7825022DAAA6A00318351 /* Assets.xcassets */,
-				F2D7825222DAAA6A00318351 /* LaunchScreen.storyboard */,
-				F2D7825522DAAA6A00318351 /* Info.plist */,
+				F2D7826922DAAAB400318351 /* Home */,
+				F2D7827822DAC96800318351 /* Player */,
+				F2D7828222DACB8800318351 /* Resources */,
 			);
 			path = Verizon;
 			sourceTree = "<group>";
@@ -90,10 +106,85 @@
 		F2D7825D22DAAA6A00318351 /* VerizonTests */ = {
 			isa = PBXGroup;
 			children = (
+				F2D7827B22DAC9A200318351 /* Home */,
+				F2D7827C22DAC9A900318351 /* Player */,
 				F2D7825E22DAAA6A00318351 /* VerizonTests.swift */,
 				F2D7826022DAAA6A00318351 /* Info.plist */,
 			);
 			path = VerizonTests;
+			sourceTree = "<group>";
+		};
+		F2D7826922DAAAB400318351 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F2D7824B22DAAA6A00318351 /* ViewController.swift */,
+				F2D7826A22DAAAFE00318351 /* HomeViewModel.swift */,
+				F2D7826C22DAAB0A00318351 /* HomeModel.swift */,
+				F2D7826E22DAAB1B00318351 /* Cell */,
+				F2D7827322DAABA700318351 /* Helpers */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F2D7826E22DAAB1B00318351 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F2D7826F22DAAB4500318351 /* HomeTableViewCell.swift */,
+				F2D7827122DAAB6F00318351 /* HomeCellViewModel.swift */,
+				F2D7828322DB935700318351 /* LoadingTableCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F2D7827322DAABA700318351 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F2D7827422DAABEA00318351 /* NetworkHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F2D7827822DAC96800318351 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				F2D7827922DAC98400318351 /* VerizonPlayerViewController.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		F2D7827B22DAC9A200318351 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F2D7827D22DAC9C800318351 /* HomeViewModelTests.swift */,
+				F2D7827F22DAC9D200318351 /* Cell */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F2D7827C22DAC9A900318351 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		F2D7827F22DAC9D200318351 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F2D7828022DAC9E800318351 /* HomeCellViewModelTests.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F2D7828222DACB8800318351 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F2D7824D22DAAA6A00318351 /* Main.storyboard */,
+				F2D7825022DAAA6A00318351 /* Assets.xcassets */,
+				F2D7825222DAAA6A00318351 /* LaunchScreen.storyboard */,
+				F2D7825522DAAA6A00318351 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,8 +288,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2D7828422DB935700318351 /* LoadingTableCell.swift in Sources */,
+				F2D7827522DAABEA00318351 /* NetworkHelper.swift in Sources */,
+				F2D7826D22DAAB0A00318351 /* HomeModel.swift in Sources */,
+				F2D7827022DAAB4500318351 /* HomeTableViewCell.swift in Sources */,
 				F2D7824C22DAAA6A00318351 /* ViewController.swift in Sources */,
+				F2D7827222DAAB6F00318351 /* HomeCellViewModel.swift in Sources */,
+				F2D7826B22DAAAFE00318351 /* HomeViewModel.swift in Sources */,
 				F2D7824A22DAAA6A00318351 /* AppDelegate.swift in Sources */,
+				F2D7827A22DAC98400318351 /* VerizonPlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +305,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2D7825F22DAAA6A00318351 /* VerizonTests.swift in Sources */,
+				F2D7828122DAC9E800318351 /* HomeCellViewModelTests.swift in Sources */,
+				F2D7827E22DAC9C800318351 /* HomeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,7 +461,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Verizon/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Verizon/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -378,7 +478,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Verizon/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Verizon/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
